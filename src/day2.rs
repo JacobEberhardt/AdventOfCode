@@ -33,11 +33,10 @@ pub fn calculate_corruption_checksum_star2(input: &str) -> u32 {
         let mut div_res = 0;
         for fac1 in row.clone().into_iter(){
             for fac2 in row.clone().into_iter(){
-                if (fac1!=fac2&&fac1%fac2==0){
+                if fac1!=fac2&&fac1%fac2==0 {
                     div_res= fac1/fac2;
                  
                 }
-                println!("factor 1: {}, factor2: {}, result: {}",fac1,fac2,div_res);
             }
         }
         
