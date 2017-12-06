@@ -3,6 +3,7 @@ mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 
 fn main() {
     println!("Advent of Code Solutions");
@@ -1645,5 +1646,16 @@ rvbu czwpdit vmlihg spz lfaxxev zslfuto oog dvoksub";
 
     println!("Star 2: Weirder jump instructions");
     println!("Solution: {}", day5::count_jumps_to_exit_star2(&input));
+
+// Day 6
+
+println!("Day 6: Memory Reallocation");
+
+    let input: &str = "11	11	13	7	0	15	5	5	4	4	1	1	7	1	15	11";
+    println!("Star 1: Cycles until state repetition");
+    println!("Solution: {}", day6::count_cycles_until_known_state(&input));
+
+    println!("Star 2: Cycles until input state");
+    println!("Solution: {}", day6::determine_loop_size(&input));
 
 }

@@ -1,6 +1,5 @@
 pub fn count_jumps_to_exit_star1(input: &str)->u32{
     let mut jump_offsets: Vec<i32> = input.lines().map(|x|x.parse::<i32>().unwrap()).collect();
-    println!("{:?}", jump_offsets);
 
     let mut jump_counter = 0;
     let mut current_pos = 0;
@@ -20,7 +19,6 @@ pub fn count_jumps_to_exit_star1(input: &str)->u32{
 
 pub fn count_jumps_to_exit_star2(input: &str)->u32{
     let mut jump_offsets: Vec<i32> = input.lines().map(|x|x.parse::<i32>().unwrap()).collect();
-    println!("{:?}", jump_offsets);
 
     let mut jump_counter = 0;
     let mut current_pos = 0;
